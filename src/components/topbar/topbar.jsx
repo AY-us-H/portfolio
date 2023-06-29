@@ -1,9 +1,9 @@
 import "./topbar.scss"
 import {Person,Mail} from "@material-ui/icons"
 
-export default function topbar() {
+export default function topbar({menuOpen,setMenuOpen}) {
   return (
-    <div className='topbar' id="topbar">
+    <div className={'topbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
                 <a href="#intro" className="logo">Ayush</a>
@@ -17,7 +17,7 @@ export default function topbar() {
                 </div>
         </div>
         <div className="right">
-            <div className="hamburger">
+            <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                 <span className="line1"></span>
                 <span className="line2"></span>
                 <span className="line3"></span>
