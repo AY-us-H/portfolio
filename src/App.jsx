@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Topbar from "./components/topbar/topbar";
-import Intro from "./components/intro/intro";
-import Portfolio from "./components/portfolio/portfolio";
+import Topbar from "./components/topbar/Topbar";
+import Intro from "./components/intro/Intro";
+import Portfolio from "./components/portfolio/Portfolio";
 import Work from "./components/work/work";
-import Testimonials from "./components/testimonials/testimonials";
-import Contact from "./components/contact/contact";
-import Menu from "./components/menu/menu";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
 import "./app.scss"
 
 function App() {
