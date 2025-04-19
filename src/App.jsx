@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
+import Home from "./components/sections/Home";
 
 const App = () => {
   // usestate for loading screen
   const [isLoaded, setIsLoaded] = useState(false);
   // usestate for hamburger icon menu (responsiveness)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -21,7 +22,7 @@ const App = () => {
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}  />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        {/* Home */}
+        <Home />
         {/* About */}
         {/* Projects */}
         {/* Contact */}

@@ -16,6 +16,7 @@ const Navbar = ({ menuOpen ,setMenuOpen }) => {
 
           {/* Hamburger icon for mobile view, unicode is used for hamburger-icon */}
           <div className='w-7 h-5 relative cursor-pointer z-40 md:hidden' onClick={(prev)=> !prev}>
+            {/* unicode for hamburger-icon */}
             &#9776;
           </div>
 
