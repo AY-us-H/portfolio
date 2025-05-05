@@ -1,4 +1,5 @@
 import React from "react";
+import { RevealOnScroll } from '../RevealOnScroll'
 
 const Projects = () => {
   return (
@@ -6,6 +7,7 @@ const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
+      <RevealOnScroll>
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Featured Projects
@@ -98,7 +100,7 @@ const Projects = () => {
               communication
             </p>
             <div className="flex flex-wrap gap-2 mb-4 mt-2">
-              {["ReactJS", "MaterialUI", "RapidAPI", "Vercel"].map(
+              {["ReactJS", "TailwindCSS", "EmailJS API", "Vercel"].map(
                 (tech, key) => (
                   <span
                     key={key}
@@ -114,7 +116,7 @@ const Projects = () => {
 
             <div className="flex justify-between items-center">
               <a
-                href="#"
+                href="https://github.com/AY-us-H/portfolio"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
                 View Project
@@ -123,6 +125,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };
